@@ -8,5 +8,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'APIManagers' do
 
 pod 'CTMediator'
+pod 'XKNetworking'
 
 end

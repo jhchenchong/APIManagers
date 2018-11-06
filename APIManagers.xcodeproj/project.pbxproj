@@ -14,6 +14,9 @@
 		B7B26F2C21912C1A00687350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B26F2B21912C1A00687350 /* Assets.xcassets */; };
 		B7B26F2F21912C1A00687350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B26F2D21912C1A00687350 /* LaunchScreen.storyboard */; };
 		B7B26F3221912C1A00687350 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B26F3121912C1A00687350 /* main.m */; };
+		B7B26F442191372D00687350 /* APIManagersService.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B26F432191372D00687350 /* APIManagersService.m */; };
+		B7B26F47219137D200687350 /* Target_APIManagersService.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B26F46219137D200687350 /* Target_APIManagersService.m */; };
+		B7B26F4C2191391700687350 /* TestAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B26F4B2191391700687350 /* TestAPIManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		B7B26F2E21912C1A00687350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7B26F3021912C1A00687350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7B26F3121912C1A00687350 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7B26F422191372D00687350 /* APIManagersService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManagersService.h; sourceTree = "<group>"; };
+		B7B26F432191372D00687350 /* APIManagersService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIManagersService.m; sourceTree = "<group>"; };
+		B7B26F45219137D200687350 /* Target_APIManagersService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_APIManagersService.h; sourceTree = "<group>"; };
+		B7B26F46219137D200687350 /* Target_APIManagersService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_APIManagersService.m; sourceTree = "<group>"; };
+		B7B26F4A2191391700687350 /* TestAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAPIManager.h; sourceTree = "<group>"; };
+		B7B26F4B2191391700687350 /* TestAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAPIManager.m; sourceTree = "<group>"; };
 		EBFE7A1E86C79706E39065B9 /* libPods-APIManagers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APIManagers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +107,8 @@
 		B7B26F3821912C7900687350 /* APIManagers */ = {
 			isa = PBXGroup;
 			children = (
+				B7B26F402191366400687350 /* APIManagers */,
+				B7B26F3F2191366400687350 /* Target */,
 			);
 			path = APIManagers;
 			sourceTree = "<group>";
@@ -109,6 +120,50 @@
 				B7B26F2621912C1900687350 /* ViewController.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		B7B26F3F2191366400687350 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				B7B26F412191367500687350 /* Service */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		B7B26F402191366400687350 /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+				B7B26F482191391700687350 /* TestGroup */,
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		B7B26F412191367500687350 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B7B26F422191372D00687350 /* APIManagersService.h */,
+				B7B26F432191372D00687350 /* APIManagersService.m */,
+				B7B26F45219137D200687350 /* Target_APIManagersService.h */,
+				B7B26F46219137D200687350 /* Target_APIManagersService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B7B26F482191391700687350 /* TestGroup */ = {
+			isa = PBXGroup;
+			children = (
+				B7B26F492191391700687350 /* TestAPIManager */,
+			);
+			path = TestGroup;
+			sourceTree = "<group>";
+		};
+		B7B26F492191391700687350 /* TestAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7B26F4A2191391700687350 /* TestAPIManager.h */,
+				B7B26F4B2191391700687350 /* TestAPIManager.m */,
+			);
+			path = TestAPIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B26F4C2191391700687350 /* TestAPIManager.m in Sources */,
 				B7B26F2721912C1900687350 /* ViewController.m in Sources */,
+				B7B26F442191372D00687350 /* APIManagersService.m in Sources */,
 				B7B26F3221912C1A00687350 /* main.m in Sources */,
 				B7B26F2421912C1900687350 /* AppDelegate.m in Sources */,
+				B7B26F47219137D200687350 /* Target_APIManagersService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

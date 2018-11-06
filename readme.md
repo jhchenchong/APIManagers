@@ -1,1 +1,1 @@
-pod "TemplateProject"
+pod "APIManagers"

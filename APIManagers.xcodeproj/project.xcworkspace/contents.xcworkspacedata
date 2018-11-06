@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TemplateProject.xcodeproj">
+      location = "self:APIManagers.xcodeproj">
    </FileRef>
 </Workspace>

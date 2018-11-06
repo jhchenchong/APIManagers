@@ -5,7 +5,7 @@ inhibit_all_warnings!
 source 'https://gitee.com/jhcc/PrivatePods.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'TemplateProject' do
+target 'APIManagers' do
 
 pod 'CTMediator'
 
